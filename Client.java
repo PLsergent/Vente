@@ -35,11 +35,11 @@ public class Client{
   }
 
   public double coutAchat(){
-    double prix=0;
+    double cout=0;
     for(Produit p: lesProduits){
-      prix=prix+p.calculPrix();
+      cout+=p.calculPrix();
     }
-    return prix;
+    return cout;
   }
 
   public void ajoutProduit(Produit p){

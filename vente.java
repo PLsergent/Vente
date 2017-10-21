@@ -22,7 +22,7 @@ public class vente {
         Client c2 = new Client("Courdet", "Valérie", "vcourdet@mail.com");
         Logiciel log1=new Logiciel("Word", 55,"util",12);
         Logiciel log2=new Logiciel("Photoshop", 250,"site",0);
-        Logiciel log3=new Logiciel("Excel", 60,"illimité",0);
+        Logiciel log3=new Logiciel("Excel", 60,"illimite",0);
         Materiel mat1=new Materiel("Ipad mini", 350,"tablette");
         Materiel mat2=new Materiel("Toshiba", 520,"PC");
         Materiel mat3=new Materiel("DELL", 670,"PC");
@@ -36,15 +36,19 @@ public class vente {
         ArrayList<Client> lesClients =new ArrayList<Client>();
         lesClients.add(c1);
         lesClients.add(c2);
+
         for (Client c : lesClients)
         {
+            System.out.println("==========");
             c.afficheListeProduit();
-            System.out.println("cout du client "+c.coutAchat());
+            System.out.println("cout du client : "+c.coutAchat());
         }
+        System.out.println("=====================");
         //affichage du cout d'un logiciel
         System.out.println(log1.getNom()+" "+log1.calculPrix()+"€");
         System.out.println(log2.getNom()+" "+log2.calculPrix()+"€");
-
+        System.out.println(log3.getNom()+" "+log3.calculPrix()+"€");
+        System.out.println("=====================");
         System.out.println("Compare un logiciel et un matériel");
         System.out.println(log1.equals(mat1));
         System.out.println("Compare deux logiciels différents");

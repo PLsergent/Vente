@@ -17,7 +17,7 @@ public class Materiel extends Produit{
 ///methode
 
   public String toString(){
-    return typemateriel;
+    return super.toString()+ " type de matériel : " +typemateriel;
   }
 
   public boolean equals(Materiel r, Produit p){

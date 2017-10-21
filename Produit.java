@@ -17,7 +17,7 @@ public class Produit{
   }
 
   public boolean equals(Produit p){
-    if (this.nom.equals(p.getNom())&& this.prixU==p.getPrix()){
+    if (this.nom.equals(p.getNom()) && this.prixU==p.getPrix()) {
       return true;
     }else{
       return false;
@@ -29,7 +29,7 @@ public class Produit{
   }
 
   public String toString(){
-    return nom;
+    return nom+ " coute : "+prixU+" €";
   }
 
  public String getNom(){

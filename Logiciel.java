@@ -30,7 +30,7 @@ public class Logiciel extends Produit {
   }
 
   public String toString(){
-    return typelicence+" "+nbutil;
+    return super.toString()+ " licence : " +typelicence;
   }
 
   public boolean equals(Logiciel l, Produit p){
